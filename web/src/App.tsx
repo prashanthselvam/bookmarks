@@ -6,7 +6,7 @@ function App() {
   const [error, setError] = useState<string>('')
 
   useEffect(() => {
-    fetch('http://localhost:8080')
+    fetch('https://backend-empty-sun-8345.fly.dev/')
       .then(res => res.text())
       .then(data => setMessage(data))
       .catch(err => setError(err.message))
